@@ -9,14 +9,15 @@
 **Pros of stateful**: Ensure that ongoing connections do not break when servers and muxes come or go.
 
 **Cons of stateful**:
-1. Standard scaling events break many ongoing connections.
-2. SYN flood attacks prevent muxes from keeping “good” connection state, negating its benefits.
-----
-*My question: What is SYN flood attacks?*
-----
-3. Running stateful load-balancers in software with many flows reduces throughput.
-----
-*My question: Why must software?*
+
+1.Standard scaling events break many ongoing connections.
+
+2.SYN flood attacks prevent muxes from keeping “good” connection state, negating its benefits.
+
+`My question: What is SYN flood attacks?`
+
+3.Running stateful load-balancers in software with many flows reduces throughput.
+
 
 
 
